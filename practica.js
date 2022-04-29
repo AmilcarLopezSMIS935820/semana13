@@ -1,5 +1,5 @@
 // Primero
-/*const amigo = require('readline').createInterface({
+const amigo = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout,
 });
@@ -7,10 +7,10 @@
 amigo.question("Cual es el nombre de su amigo? ", amigo => {
     console.log(`El nombre de tu amigo es:  ${amigo}`);
 });
-*/
+
 //Segundo
 
-/*const x = require('readline').createInterface({
+const x = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout,
 });
@@ -24,21 +24,20 @@ x.question("Ingrese el primer numero: ", (n1) => {
                 console.log(sum);
             };
             if (operacion == 'resta') {
-                var rest = n1 - n2;
+                var rest = parseFloat(n1) - parseFloat(n2);
                 console.log(rest);
             };
             if (operacion == 'multiplicar') {
-                var mult = n1 * n2;
+                var mult = parseFloat(n1) * parseFloat(n2);
                 console.log(mult);
             };
             if (operacion == 'dividir') {
-                var div = n1 / n2;
+                var div = parseFloat(n1) / parseFloat(n2);
                 console.log(div);
             };
         })
     })
 });
-*/
 
 
 //Tercero
